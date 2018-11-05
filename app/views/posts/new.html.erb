@@ -1,0 +1,13 @@
+<form>
+
+<%= form_tag("/posts/create") do %>
+  <div class="form-group">
+    <label>投稿内容<br>　
+    <textarea name="content"></textarea>
+    </label>
+    <small  class="form-text text-muted">公序良俗に反するような内容の投稿はお控えください</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">投稿する</button>
+<% end %>
+</form>

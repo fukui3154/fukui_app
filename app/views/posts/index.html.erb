@@ -1,6 +1,7 @@
-<div class="alert alert-success" role="alert">
-  <% @posts.each do |post| %>
-   <%= post.content %>
-  <% end %> 
+<% @posts.each do |post| %>
+  <div class="alert alert-success" role="alert">
 
-</div>
+   <%= link_to(post.content,"/posts/#{post.id}") %>
+   
+  </div>
+<% end %>

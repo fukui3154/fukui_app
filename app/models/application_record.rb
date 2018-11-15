@@ -1,4 +1,4 @@
-require 'csv'
-class ApplicationRecord < ActiveRecord::Base
+class ApplicationRecord  <  ActiveRecord::Base
 　  self.abstract_class = true
+    require 'csv'
 end
